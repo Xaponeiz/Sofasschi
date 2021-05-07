@@ -1,0 +1,100 @@
+from time import sleep
+precoTotal = 0
+precoFinal = 0
+print('\033[35m>:<'*14)
+print(f'\033[31m{"Schimuda Estofados":^42}')
+print('\033[35m>:<'*14)
+sleep(0.3)
+print('\033[31m[1] Arezzo')
+sleep(0.3)
+print('\033[32m[2] Arezzo canto')
+sleep(0.3)
+print('\033[33m[3] Arezzo chaise')
+sleep(0.3)
+print('\033[34m[4] Búzzios')
+sleep(0.3)
+print('\033[35m[5] Califórnia')
+sleep(0.3)
+print('\033[36m[6] Califórnia canto')
+sleep(0.3)
+print('\033[37m[7] Califórnia chaise')
+sleep(0.3)
+print('\033[38m[8] Dubai')
+sleep(0.3)
+print('\033[37m[9] Londres')
+sleep(0.3)
+print('\033[36m[10] Milão')
+sleep(0.3)
+print('\033[35m[11] Milão chaise')
+while True:
+    modelo = int(input('\033[32mDigite um número respectivo a um modelo: '))
+    if 1 <= modelo <= 11:
+        break
+    print('\033[31mTente novamente. ')
+if modelo == 1:
+    modelo = 'Arezzo'
+    precoMetro = 1412.2448
+    metragem = float(input('\033[32mQual a metragem desejada ?'))
+    precoTotal = metragem * precoMetro
+    precoFinal = precoTotal - (precoTotal*0.1)
+if modelo == 2:
+    modelo = 'Arezzo canto'
+    precoMetro = 1160
+    metragem = float(input('\033[32mQual a metragem desejada ?'))
+    precoTotal = metragem * precoMetro
+    precoFinal = precoTotal - (precoTotal*0.1)
+if modelo == 3:
+    modelo = 'Arezzo chaise'
+    precoMetro = 1184.7619
+    metragem = float(input('\033[32mQual a metragem desejada ?'))
+    precoTotal = metragem * precoMetro
+    precoFinal = precoTotal - (precoTotal*0.1)
+if modelo == 4:
+    modelo = 'Buzzios'
+    precoMetro = 1769.2307
+    metragem = float(input('\033[32mQual a metragem desejada ?'))
+    precoTotal = metragem * precoMetro
+    precoFinal = precoTotal - (precoTotal*0.1)
+if modelo == 5:
+    modelo = 'Califórnia'
+    precoMetro = 1620.4081
+    metragem = float(input('\033[32mQual a metragem desejada ?'))
+    precoTotal = metragem * precoMetro
+    precoFinal = precoTotal - (precoTotal*0.1)
+if modelo == 6:
+    modelo = 'Califórnia canto'
+    precoMetro = 1200
+    metragem = float(input('\033[32mQual a metragem desejada ?'))
+    precoTotal = metragem * precoMetro
+    precoFinal = precoTotal - (precoTotal*0.1)
+if modelo == 7:
+    modelo = 'Califórnia chaise'
+    precoMetro = 1371.4285
+    metragem = float(input('\033[32mQual a metragem desejada ?'))
+    precoTotal = metragem * precoMetro
+    precoFinal = precoTotal - (precoTotal*0.1)
+if modelo == 8:
+    modelo = 'Dubai'
+    precoMetro = 1980
+    metragem = float(input('\033[32mQual a metragem desejada ?'))
+    precoTotal = metragem * precoMetro
+    precoFinal = precoTotal - (precoTotal*0.1)
+if modelo == 9:
+    modelo = 'Londres'
+    precoMetro = 1634.7826
+    metragem = float(input('\033[32mQual a metragem desejada ?'))
+    precoTotal = metragem * precoMetro
+    precoFinal = precoTotal - (precoTotal*0.1)
+if modelo == 10:
+    modelo = 'Milão'
+    precoMetro = 1100
+    metragem = float(input('\033[32mQual a metragem desejada ?'))
+    precoTotal = metragem * precoMetro
+    precoFinal = precoTotal - (precoTotal*0.1)
+if modelo == 11:
+    modelo = 'Milão chaise'
+    precoMetro = 891.30434
+    metragem = float(input('\033[32mQual a metragem desejada ?'))
+    precoTotal = metragem * precoMetro
+    precoFinal = precoTotal - (precoTotal*0.1)
+print(f'\033[35mO preço do modelo \033[34m{modelo} \033[35msem desconto é: \033[33mR${precoTotal:.2f} \n\033[35mE com desconto: \033[32mR${precoFinal:.2f}')
